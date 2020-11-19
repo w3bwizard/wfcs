@@ -1,32 +1,9 @@
 ﻿:root {
-  --text-color: #ffc702;
+  --text-color: #ca9f06;
+  --text-content-color: #eee;
+  --text-warning-color: #973838;
   --header-text-color: #0d0d0d;
   --main-color: #1d2526;
 }
-@media only screen and (max-width: 935px) {
-  .header__text {
-    padding: 14px;
-    position: relative;
-    top: 0;
-    left: 0;
-    color: var(--text-color);
-    background: #151322;
-  }
-  .header__text p {
-    width: 100%;
-    font-size: 100%;
-    font-size: calc(81.25% + (14 - 13) * (100vw - 480px) / (935 - 480));
-  }
-  .header__text h1 {
-    font-size: calc(125% + (32 - 20) * (100vw - 480px) / (935 - 480));
-  }
-}
-@media only screen and (max-width: 480px) {
-  .header__text {
-    padding: 7px;
-  }
-  .header__text p {
-    margin-top: 1px;
-    font-size: 13px;
-  }
+@media only screen and (max-width: 1024px) {
 }
