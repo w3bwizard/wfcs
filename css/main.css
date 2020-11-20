@@ -23,6 +23,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   background-color: #0d0e0f;
+  background-image: url(../img/bg3.png);
+  background-attachment: fixed;
 }
 .main {
   display: flex;
@@ -251,11 +253,90 @@ body {
 .download__description a:hover {
   text-decoration: underline;
 }
-.comments {
-}
 .comments h3 {
   font-size: 20px;
   font-weight: 500;
   text-align: left;
   color: var(--text-color);
+}
+.cat__description h1 {
+  font-size: calc(162.5% + (32 - 26) * (100vw - 700px) / (1192 - 700));
+  color: var(--text-content-color);
+}
+.cat__description p {
+  color: var(--text-content-color);
+  margin-top: 14px;
+}
+.post {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 7px 14px;
+  margin-top: 14px;
+  border: 1px solid var(--text-color);
+}
+.post__content {
+  display: flex;
+  margin-top: 7px;
+}
+.post__img-con {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+}
+.post__img-con img {
+  display: block;
+  width: 100%;
+}
+.post__text-con {
+  width: 50%;
+  padding-right: 7px;
+}
+.post__text-con p {
+  font-size: calc(87.5% + (16 - 14) * (100vw - 1024px) / (1192 - 1024));
+  color: var(--text-content-color);
+}
+.post__title-link {
+  position: relative;
+  align-self: start;
+}
+.post h2 {
+  font-size: calc(150% + (30 - 24) * (100vw - 700px) / (1192 - 700));
+  color: var(--text-color);
+}
+.post__details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 0 7px 0;
+}
+.post__views {
+  color: var(--text-content-color);
+  margin: 0 14px 0 auto;
+}
+.post__views::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/eye.svg");
+  color: var(--text-content-color);
+  width: 18px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: top;
+}
+.post__comments::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/comments.svg");
+  color: var(--text-content-color);
+  width: 18px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: top;
+}
+.post__link {
+  position: relative;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.post__button {
 }
