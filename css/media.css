@@ -90,6 +90,15 @@
   .content__main {
     padding: 7px;
   }
+  .article__autor, .article__views {
+    font-size: calc(93.75% + (18 - 15) * (100vw - 320px) / (480 - 320));
+  }
+  .article__views::before {
+    display: none;
+  }
+  .article h1 {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 1192px) {
   .article h1 {
